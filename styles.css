@@ -12,8 +12,19 @@
 
 body {
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 3rem 1rem;
     max-width: 375px;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+}
+
+.waves {
+    position: absolute;
+    bottom: -17rem;
+    left: -14rem;
 }
 
 .images {
@@ -23,28 +34,30 @@ body {
 
 .slider {
     position: absolute;
-    top: 16rem;
+    top: 18.5rem;
     left: 5.4rem;
-    padding: 0.6rem;
+    padding: 1rem;
     background-color: white;
     border-radius: 40px;
+    display: flex;
 }
 
 .previous {
     float: left;
-    margin-right: 2.5rem;
-    padding-left: 0.5rem;
+    margin-right: 3rem;
+    padding-left: 0.2rem;
 }
 
 .next {
-    padding-right: 0.5rem;
+    padding-right: 0.2rem;
 }
 
 .pattern-bg {
     position: absolute;
     top: 0.2rem;
     left: -2rem;
-    z-index: -1;
+    z-index: -9;
+    filter: drop-shadow(5px 30px 40px var(--grayish-blue));
 }
 
 .pattern-bg {
@@ -72,7 +85,7 @@ body {
 
 .feedback p:first-of-type {
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.4;
     text-align: center;
@@ -80,18 +93,22 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+.name,
+.title {
+    font-size: 1.1rem;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
 .name {
     font-weight: 700;
     font-family: 'Inter', sans-serif;
-    text-align: center;
-    font-size: 1rem;
+  
 }
 
 .title {
-    text-align: center;
     color: var(--grayish-blue);
-    font-size: 1rem;
-    font-family: 'Inter', sans-serif;
+  
 }
 
 .hide {
