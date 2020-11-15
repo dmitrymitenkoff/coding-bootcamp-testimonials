@@ -23,7 +23,7 @@ main {
 
 .waves {
     position: absolute;
-    bottom: -17rem;
+    bottom: -19rem;
     left: -14rem;
 }
 
@@ -34,22 +34,25 @@ main {
 
 .slider {
     position: absolute;
-    top: 18.5rem;
-    left: 5.4rem;
+    top: 23.5rem;
+    left: 6.3rem;
     padding: 1rem;
     background-color: white;
     border-radius: 40px;
     display: flex;
+    z-index: 1000;
 }
 
 .previous {
     float: left;
     margin-right: 3rem;
     padding-left: 0.2rem;
+    cursor: pointer;
 }
 
 .next {
     padding-right: 0.2rem;
+    cursor: pointer;
 }
 
 .pattern-bg {
@@ -69,7 +72,11 @@ main {
     width: 85%;
 }
 
-.feedback {
+.card {
+    position: relative;
+}
+
+section {
     margin-top: 3rem;
     margin-bottom: 2rem;
     padding-top: 2rem;
@@ -79,12 +86,14 @@ main {
 .quotes {
     width: 20%;
     position: absolute;
-    top: 0.5rem;
+    top: 23rem;
     left: 7rem;
 }
 
-.feedback p:first-of-type {
+.tanya p:first-of-type,
+.john p:first-of-type {
     margin-bottom: 1rem;
+    margin-top: 4rem;
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.4;
