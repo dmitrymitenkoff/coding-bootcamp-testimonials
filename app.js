@@ -1,23 +1,14 @@
 const next = document.querySelector(".next");
 const previous = document.querySelector(".previous");
-const tanya = document.querySelector(".tanya");
-const john = document.querySelector(".john");
-const tanyaImg = document.querySelector(".tanya-img");
-const johnImg = document.querySelector(".john-img");
 
-next.addEventListener("click", () => {
-    tanya.classList.toggle("hide");
-    tanyaImg.classList.toggle("hide");
-    john.classList.toggle("hide");
-    johnImg.classList.toggle("hide");
-});
+function toggleChange() {
+    const tanya = document.querySelector(".tanya").classList.toggle("hide");
+    const john = document.querySelector(".john").classList.toggle("hide");
+    const tanyaImg = document.querySelector(".tanya-img").classList.toggle("hide");
+    const johnImg = document.querySelector(".john-img").classList.toggle("hide");  
+}
 
+next.addEventListener("click", toggleChange);
+previous.addEventListener("click", toggleChange);
 
-
-previous.addEventListener("click", () => {
-    tanya.classList.toggle("hide");
-    tanyaImg.classList.toggle("hide");
-    john.classList.toggle("hide");
-    johnImg.classList.toggle("hide");
-});
 
