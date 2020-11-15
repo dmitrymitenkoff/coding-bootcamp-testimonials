@@ -19,13 +19,14 @@ body {
 }
 
 .container {
-    width: 375px;
-    margin: 4rem auto;
+    max-width: 375px;
+    margin: 0 auto;
     position: relative;
 }
 
 .profile-image img {
     max-width: 100%;
+    height: auto;
 }
 
 .text {
@@ -50,8 +51,9 @@ body {
 
 .pattern-bg {
     position: absolute;
-    width: 120%;
-    top: -2.5rem;
+    max-width: 100%;
+    height: auto;
+    top: 3rem;
     right: -3rem;
     z-index: -1;
     filter: drop-shadow(-30px 10px 25px var(--grayish-blue));
@@ -96,7 +98,7 @@ body {
     .container {
         display: flex;
         flex-direction: row;
-        width: 80rem;
+        max-width: 80rem;
         padding: 1rem 2rem;
         position: relative;
     }
